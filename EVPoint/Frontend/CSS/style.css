@@ -1,0 +1,182 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: #eaeaea;
+  overflow-x: hidden;
+}
+
+/* ===== APP ===== */
+.app {
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  position : relative;
+  overflow: hidden;
+
+  background:#00e600; fff; /* clean white */
+
+  padding: 16px;
+
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  margin: 20px auto;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 40px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background:#1ccf1c; 
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.inner-card {
+  background: #39ff39; 
+  border-radius: 14px;
+  padding: 12px;
+  margin-top: 10px;
+
+  border: none;
+}
+
+/* ===== TITLE ===== */
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ===== ROW ===== */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  width: 100%;
+  padding: 14px;
+
+  border-radius: 16px;
+  border: 2px solid black;
+
+  background: #00ff00;
+
+  text-align: center;
+  font-weight: bold;
+
+  margin-bottom: 16px;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  position: absolute;
+  bottom: 0;
+
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 12px 0;
+
+  background: #00e600;
+}
+
+/* ICON ITEMS */
+.nav-item {
+  flex: 1;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* ACTIVE ICON LINE */
+.nav-item.active {
+  border-top: 3px solid black;
+  padding-top: 6px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.inner-card p {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.card img,
+.card iframe {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* INPUT PERFECT */
+.phone {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  font-size: 15px;
+}
+
+/* TERMS */
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* BUTTON FINAL */
+.primary {
+  margin-top: 16px;
+  background: #00ff00;
+  border: 2px solid black;
+  border-radius: 16px;
+  padding: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* CENTER ADJUST */
+.app {
+  padding-top: 20px;
+}

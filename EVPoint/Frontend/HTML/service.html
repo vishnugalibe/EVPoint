@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="header">
+    <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png">
+    <h1>Service Center</h1>
+  </div>
+
+  <div class="card center">
+    <h3>Electric Charging Station</h3>
+    <p>Yakutpura, Hyderabad</p>
+  </div>
+
+  <div class="card">
+    <h3>Electric Vehicle Service Center</h3>
+
+    <img src="https://maps.gstatic.com/tactile/basepage/pegman_sherlock.png" width="100%">
+
+    <div class="card">
+      <p>📍 Venkateshwara EV Service Center</p>
+      <div class="row">
+        <span>2 KM</span>
+        <span>₹1500</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <p>📍 Sri Srinivasa EV Service Center</p>
+      <div class="row">
+        <span>0.6 KM</span>
+        <span>₹2500</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <p>📍 Shiva EV Service Center</p>
+      <div class="row">
+        <span>5 KM</span>
+        <span>₹500</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <p>📍 GLIDA EV Service Center</p>
+      <div class="row">
+        <span>1 KM</span>
+        <span>₹1900</span>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="btn" onclick="goBook()">Book EV Service Center</button>
+
+  <div class="footer">
+    <span onclick="goHome()">⛽</span>
+    <span onclick="goService()">⚙</span>
+    <span onclick="goHistory()">⏱</span>
+    <span onclick="goMyEV()">🛵</span>
+  </div>
+
+</div>
+
+<script>
+function goHome(){ window.location="home.html"; }
+function goService(){ window.location="service.html"; }
+function goHistory(){ window.location="history.html"; }
+function goMyEV(){ window.location="myev.html"; }
+function goBook(){ window.location="service-book.html"; }
+</script>
+
+</body>
+</html>

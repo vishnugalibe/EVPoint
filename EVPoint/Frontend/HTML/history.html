@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="header">
+    <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png">
+    <h1>History</h1>
+  </div>
+
+  <div id="history"></div>
+
+  <div class="footer">
+    <span onclick="goHome()">⛽</span>
+    <span onclick="goService()">⚙</span>
+    <span onclick="goHistory()">⏱</span>
+    <span onclick="goMyEV()">🛵</span>
+  </div>
+
+</div>
+
+<script src="../js/api.js"></script>
+<script>
+async function load() {
+  const data = await api("/history");
+  const container = document.getElementById("history");
+
+  data.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = `
+      <p>Charging Station</p>
+      <div class="row">
+        <span>${item.time || "-"}</span>
+        <span>₹30</span>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+}
+load();
+
+function goHome(){ window.location="home.html"; }
+function goService(){ window.location="service.html"; }
+function goHistory(){ window.location="history.html"; }
+function goMyEV(){ window.location="myev.html"; }
+</script>
+
+</body>
+</html>

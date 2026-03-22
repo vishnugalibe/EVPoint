@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+<div class="app center">
+
+  <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" width="80">
+
+  <h1>EV Point</h1>
+
+  <h3>One - Time Password</h3>
+
+  <div style="display:flex; gap:10px; justify-content:center;">
+    <input class="input" style="width:50px;" maxlength="1">
+    <input class="input" style="width:50px;" maxlength="1">
+    <input class="input" style="width:50px;" maxlength="1">
+    <input class="input" style="width:50px;" maxlength="1">
+  </div>
+
+  <button class="btn" onclick="verify()">Verification Done</button>
+
+</div>
+
+<script>
+function verify() {
+  window.location = "permissions.html";
+}
+</script>
+</body>
+</html>

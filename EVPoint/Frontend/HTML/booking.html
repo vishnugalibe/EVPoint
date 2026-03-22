@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <h2>Charging Slots near you</h2>
+
+  <div class="card">
+    <h3>Biker Details</h3>
+    <input class="input" placeholder="Enter name">
+    <input class="input" placeholder="Enter location">
+  </div>
+
+  <div class="card">
+    <h3>EV Details</h3>
+    <input class="input" placeholder="Enter EV Model">
+    <input class="input" placeholder="Enter EV station">
+    <input class="input" placeholder="Enter EV Charging Type">
+    <input class="input" placeholder="Enter booking Date">
+    <input class="input" placeholder="Enter booking time">
+  </div>
+
+  <div class="card">
+    <h3>Payment Details</h3>
+    <input class="input" placeholder="Enter amount">
+
+    <div class="row">
+      <button class="small-btn">Card</button>
+      <button class="small-btn">Cash</button>
+      <button class="small-btn">UPI</button>
+    </div>
+  </div>
+
+  <button class="btn" onclick="book()">Book Charging Station</button>
+
+</div>
+
+<script src="../js/api.js"></script>
+<script>
+async function book() {
+  await api("/book", "POST", { time: "custom booking" });
+  window.location = "success.html";
+}
+</script>
+
+</body>
+</html>
